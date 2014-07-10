@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
-        <title>Seans Test App</title>
+        <title>Basic Leaflet Mobile Map</title>
     </head>
     <body>
         <div class="app">
@@ -15,7 +15,7 @@
         </div>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script> 
   <script>
-    var map = L.map('map').setView([40.760105, -111.884739], 16);   
+    var map = L.map('map').setView([52.04, -0.73], 12);   
           L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18         
     }).addTo(map);
