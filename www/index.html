@@ -14,16 +14,7 @@
 
         </div>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
-  
-  <style type="text/css">
-body {
-  padding: 0;
-  margin: 0;
-}
-html, body, #map {
-  height: 100%;
-}
-</style>
+
   <script>
     var map = L.map('map').setView([52.04, -0.73], 12);   
           L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -33,6 +24,7 @@ html, body, #map {
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
+            map.invalidateSize();
             app.initialize();
         </script>
     </body>
